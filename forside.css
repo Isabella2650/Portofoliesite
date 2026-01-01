@@ -1,0 +1,186 @@
+.video_grid_1-1,
+.velkommen_grid_1-2 {
+  display: grid;
+  max-width: 100vw;
+}
+/* Mobile version start */
+body {
+  margin: 0; /* fjerner standart luft i body */
+  padding: 0; /* fjerner standart luft i body */
+}
+
+section {
+  border: 1px solid black;
+}
+
+div {
+  border: 1px solid black;
+}
+
+/* Sektion 1 start */
+.video_grid_1-1 {
+  grid-template-columns: 1fr;
+  position: relative;
+}
+
+.video_blomster {
+  width: 100%; /* videoen skal fylde 100%*/
+  height: auto; /* Højden tikpasser sig */
+  display: block;
+  filter: brightness(0.8); /* Lidt mørkt filter på videoen */
+}
+
+.div_video_tekst {
+  position: absolute; /* Gør så teksten kan placeres ovenpå videoen */
+  top: 50%; /* Placerer teksten 50% i toppen af videon */
+  left: 50%; /* Placerer teksten 50% i venstre side af videon */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Skubber teksten 50% af dens egen størrelse op og til venstre */
+  text-align: center; /* Placerer teksten i midten*/
+}
+
+.div_pil {
+  position: absolute; /* Gør så teksten kan placeres ovenpå videoen */
+  bottom: 20px; /* Afstand fra bunden. Buttom fordi den fungerer på alle elementer med posistion absolute */
+  left: 50%; /* placerer den 50% i venstre side af videon*/
+  transform: translateX(-50%); /* Centrerer pilen horisontalt */
+}
+
+.img_pil {
+  height: auto;
+  width: 30px;
+}
+/* Sektion 1 slut */
+
+/* Sektion 2 start */
+
+.velkommen_grid_1-2 {
+  grid-template-columns: 1fr 2fr; /* Der skal være 2 frames i 1 kolonne */
+  height: auto;
+  padding: 5%;
+}
+
+.div_velkommen_tekst {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.div_portrat {
+  justify-content: center;
+  display: flex;
+}
+.forside_portrat {
+  width: fit-content; /* Sørger for at billedet fitter ind ind i rammen = div */
+  height: fit-content; /* Sørger for at billedet fitter ind ind i rammen = div*/
+}
+/* Sektion 2 slut */
+
+/* Sektion 3 start */
+.lesmere_grid_1-1 {
+  text-align: center;
+}
+
+.div_lesmere {
+  grid-template-columns: 1fr; /* Fordi den skal have 1 kollonne*/
+  display: grid;
+}
+
+.div_lesmere_billeder {
+  grid-template-columns: 1fr 1fr; /* Fordi den skal have 1 kollonne, 1 kollone */
+  display: grid;
+  position: relative;
+}
+
+.pisa {
+  width: 60%;
+  padding-left: 30%; /* ændrer på luften fra venstre */
+}
+
+.cafe {
+  width: 60%;
+  padding-right: 30%; /* ændrer på luften fra højre */
+}
+
+.knap {
+  background: #ffe9f5;
+  color: #000000;
+  padding: 10px; /* ændrer på luften i højden */
+  padding-left: 2rem; /* ændrer på luften i bredden */
+  padding-right: 2rem; /* ændrer på luften i bredden */
+  border-radius: 20px;
+  border: solid;
+  text-decoration: none;
+  display: inline-block;
+
+  position: absolute;
+}
+
+.knap a:hover {
+  color: black;
+}
+
+.knap a:active {
+  color: white;
+}
+
+/* knap over første billede (pisa) */
+.div_lesmere_billeder > div:nth-child(1) .knap 
+/* Vælg knappen (.knap), som ligger inde i det FØRSTE div inde i .div_lesmere_billeder */ {
+  left: 53%;
+  top: 10%;
+}
+
+/* knap over andet billede (cafe) */
+.div_lesmere_billeder > div:nth-child(2) .knap /* Vælg knappen (.knap), som ligger inde i det FØRSTE div inde i .div_lesmere_billeder */ {
+  right: 52%;
+  top: 10%;
+}
+
+/* Sektion 3 slut */
+/* Mobile version slut */
+
+/* Desktop version start */
+
+@media screen and (min-width: 1300px) {
+  :root {
+    --gap: 24px;
+    --pad: 32px;
+  }
+
+  .img_pil {
+    height: auto;
+    width: 100%;
+  }
+  .div_portrat {
+    justify-content: center;
+    display: flex;
+  }
+  .forside_portrat {
+    width: 40%;
+    height: auto;
+  }
+
+  .pisa {
+    width: 40%;
+    padding-left: 50%; /* ændrer på luften fra venstre */
+  }
+
+  .cafe {
+    width: 40%;
+    padding-right: 50%; /* ændrer på luften fra højre */
+  }
+
+  /* knap over første billede (pisa) */
+  .div_lesmere_billeder > div:nth-child(1) .knap/* Vælg knappen (.knap), som ligger inde i det FØRSTE div inde i .div_lesmere_billeder */ {
+    left: 58%;
+  }
+
+  /* knap over andet billede (cafe) */
+  .div_lesmere_billeder > div:nth-child(2) .knap /* Vælg knappen (.knap), som ligger inde i det FØRSTE div inde i .div_lesmere_billeder */ {
+    right: 59%;
+  }
+}
+
+/* Desktop version slut */
