@@ -7,6 +7,7 @@
 body {
   margin: 0; /* fjerner standart luft i body */
   padding: 0; /* fjerner standart luft i body */
+  background-color: #faf8f5;
 }
 
 section {
@@ -24,15 +25,16 @@ div {
 }
 
 .video_blomster {
-  width: 100%; /* videoen skal fylde 100%*/
-  height: auto; /* Højden tikpasser sig */
-  display: block;
   filter: brightness(0.8); /* Lidt mørkt filter på videoen */
+  width: 100%;
+  height: 75%;
+  object-fit: cover; /* fylder containeren uden at forvrænge */
+  object-position: center bottom;
 }
 
 .div_video_tekst {
   position: absolute; /* Gør så teksten kan placeres ovenpå videoen */
-  top: 50%; /* Placerer teksten 50% i toppen af videon */
+  top: 30%; /* Placerer teksten 50% i toppen af videon */
   left: 50%; /* Placerer teksten 50% i venstre side af videon */
   transform: translate(
     -50%,
@@ -43,8 +45,8 @@ div {
 
 .div_pil {
   position: absolute; /* Gør så teksten kan placeres ovenpå videoen */
-  bottom: 20px; /* Afstand fra bunden. Buttom fordi den fungerer på alle elementer med posistion absolute */
   left: 50%; /* placerer den 50% i venstre side af videon*/
+  top: 60%; /* Placerer teksten 50% i toppen af videon */
   transform: translateX(-50%); /* Centrerer pilen horisontalt */
 }
 
@@ -66,6 +68,7 @@ div {
   width: 100%;
   height: auto;
   display: flex;
+  max-width: 60ch; /* Sørger for der er 60 tegn pr linje = UX design */
 }
 .div_portrat {
   justify-content: center;
@@ -104,8 +107,8 @@ div {
 }
 
 .knap {
-  background: #ffe9f5;
-  color: #000000;
+  background: #faf8f5;
+  color: #151311;
   padding: 10px; /* ændrer på luften i højden */
   padding-left: 2rem; /* ændrer på luften i bredden */
   padding-right: 2rem; /* ændrer på luften i bredden */
@@ -118,11 +121,11 @@ div {
 }
 
 .knap a:hover {
-  color: black;
+  color: #151311;
 }
 
 .knap a:active {
-  color: white;
+  color: #faf8f5;
 }
 
 /* knap over første billede (pisa) */
@@ -143,10 +146,14 @@ div {
 
 /* Desktop version start */
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 800px) {
   :root {
     --gap: 24px;
     --pad: 32px;
+  }
+
+  .div_pil {
+    top: 68%; /* Placerer teksten 50% i toppen af videon */
   }
 
   .img_pil {
@@ -180,6 +187,10 @@ div {
   /* knap over andet billede (cafe) */
   .div_lesmere_billeder > div:nth-child(2) .knap /* Vælg knappen (.knap), som ligger inde i det FØRSTE div inde i .div_lesmere_billeder */ {
     right: 59%;
+  }
+
+  .div_velkommen {
+    margin: 30px; /* laver luft rundt om diven */
   }
 }
 

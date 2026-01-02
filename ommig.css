@@ -1,0 +1,131 @@
+.section_semester,
+.section_ommig {
+  display: grid;
+  max-width: 100vw;
+}
+/* Mobile version start */
+body {
+  margin: 0; /* fjerner standart luft i body */
+  padding: 0; /* fjerner standart luft i body */
+}
+
+section {
+  border: 1px solid black;
+}
+
+div {
+  border: 1px solid black;
+}
+
+/*1 start */
+.img_multimediedesigner {
+  width: 60%;
+  height: 100%;
+  padding-left: 20%;
+}
+
+/*1 slut */
+
+/*2 start */
+.div_ommig_tekst {
+  padding: 20px; /* generelt luft rundt om */
+  max-width: 60ch; /* Sørger for der er 60 tegn pr linje = UX design */
+}
+/*2 slut */
+
+/*3 start */
+.div_erhvevserfaring {
+  padding-left: 30%; /* luft til venstre */
+  padding-top: 50px; /* luft til toppen */
+}
+
+.knap {
+  margin-bottom: 2rem; /* generelt luft rundt om */
+  display: inline-block; /* vigtigt hvis det er <a> */
+}
+/*3 slut */
+
+/*4 start */
+.section_semester {
+  padding: 20px; /* generelt luft rundt om */
+  margin-top: 5rem; /* luft til toppen */
+}
+
+.div_semester_tekst {
+  max-width: 60ch; /* Sørger for der er 60 tegn pr linje = UX design */
+}
+.img_semester {
+  width: 100%;
+  height: auto;
+}
+
+/*4 slut */
+/* Mobile version slut */
+
+/* Desktop version start */
+
+/* Popup start */
+.div_popup {
+  width: 90%;
+  height: fit-content;
+  top: 5%;
+  padding: 0%;
+  vertical-align: middle;
+}
+
+.img_cv {
+  width: 100%;
+  height: auto;
+}
+
+.popup__close {
+  position: absolute; /*Den flytter sig ikke, når PDF’en scroller*/
+  top: 16px; /*Placerer 16px ned fra toppen*/
+  right: 16px; /* placerer 16px ind fra højre side*/
+  background-color: #faf8f5;
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --gap: 24px;
+    --pad: 32px;
+  }
+
+  .div_ommig_tekst {
+    padding: 50px; /* generelt luft rundt om */
+  }
+
+  .knap {
+    margin-top: 4rem; /* luft til toppen */
+    display: inline-block; /* vigtigt hvis det er <a> */
+  }
+
+  .div_erhvevserfaring {
+    padding-left: 45%; /* luft til venstre */
+    padding-top: 70px; /* luft til toppen */
+  }
+  .section_semester {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px; /* generelt luft rundt om */
+    margin-top: 10rem; /* luft til toppen */
+  }
+
+  .img_semester {
+    width: 50%;
+    padding-left: 25%;
+  }
+
+  .section_ommig {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .div_popup {
+    width: 35%;
+    height: fit-content;
+    top: 5%;
+    padding: 0%;
+    vertical-align: middle;
+  }
+}
+
+/* Desktop version slut */

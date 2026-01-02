@@ -1,0 +1,134 @@
+body {
+  background-color: #faf8f5;
+}
+
+.div_video_tekst h2 {
+  margin: 0; /* fjerner luft */
+  line-height: 1.1;
+}
+
+.div_video_tekst a {
+  display: block; /* så den lægger sig pænt under */
+  margin-top: 0; /* ingen ekstra luft */
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 35px;
+  color: #151311;
+  font-family: "Italianno", cursive;
+  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+  font-style: normal;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 65px;
+  color: #faf8f5;
+  font-family: "Italianno", cursive;
+  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+  font-style: normal;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 28px;
+  color: #151311;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+  font-style: normal;
+  font-weight: 100;
+}
+
+a,
+p {
+  font-size: 14px;
+  color: #151311;
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+  font-weight: weight;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.multimediedesign {
+  font-size: 14px;
+  color: #faf8f5;
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+  font-weight: weight;
+  font-style: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.knap {
+  background: #ffe9f5;
+  color: #151311;
+  padding: 10px; /* ændrer på luften i højden */
+  padding-left: 2rem; /* ændrer på luften i bredden */
+  padding-right: 2rem; /* ændrer på luften i bredden */
+  border-radius: 20px;
+  border: solid;
+  text-decoration: none;
+  display: inline-block;
+
+  position: absolute;
+}
+
+.knap a:hover {
+  color: #151311;
+}
+
+.knap a:active {
+  color: #faf8f5;
+}
+
+.footer {
+  background-color: #faf8f5;
+  padding: 20px;
+  font-family: "Mona Sans", sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 40px;
+    color: #151311;
+    font-family: "Italianno", cursive;
+    font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 185px;
+    color: #faf8f5;
+    font-family: "Italianno", cursive;
+    font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  h3 {
+    font-size: 38px;
+    color: #151311;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  a {
+    font-size: 16px;
+    color: #151311;
+    font-family: "Mona Sans", sans-serif;
+    font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+  }
+}

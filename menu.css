@@ -1,26 +1,26 @@
 header > div {
   display: flex;
   align-items: center; /* alt på samme lodrette linje */
-  justify-content: center;
+  justify-content: center; /* Sætter det i midten */
   padding: 10px 40px;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  display: block;
-  justify-content: space-between;
-  align-items: center;
+  position: sticky; /*headeren sidder fast i toppen af skræmen */
+  top: 0; /* headeren klistre i 0=toppen */
+  z-index: 9999; /* headeren ligger i lag 9999. Høj værdi=forrest*/
+  display: flex; /* Gør så logo og burger kan være på samme linje*/
+  align-items: center; /* Sætter det i midten lodret*/
+  justify-content: center; /* logo i midten */
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #faf8f5;
+  border-bottom: 3px solid #151311;
 }
 
 .div_logo {
   display: flex;
   justify-content: center; /* centrer vandret */
-  align-items: center;
-  text-decoration: none;
+  text-decoration: none; /* fjerner link streg */
 }
 
 .div_logo a {
@@ -29,7 +29,6 @@ header {
 
 nav {
   display: block;
-  align-items: center;
 }
 
 .menu {
@@ -53,12 +52,18 @@ nav {
 }
 
 .menu a:hover {
-  color: #649eca;
+  color: #e6a1c7;
 }
 
 .burger {
   width: 30px;
   height: 20px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 20px; /* matcher header padding */
+  background-color: transparent;
+  border: 0;
   cursor: pointer;
 }
 
@@ -66,7 +71,7 @@ nav {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  background-color: #151311;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -95,7 +100,7 @@ nav {
 
 nav.active .menu {
   display: block; /* Vis menuen, når nav er aktiv */
-  background-color: #ffffff;
+  background-color: #faf8f5;
   position: absolute;
   top: 94px; /* Justér efter din header højde */
   left: 0;
@@ -114,7 +119,7 @@ nav.active .menu a {
 
 /* Desktop version start */
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 800px) {
   :root {
     --gap: 24px;
     --pad: 32px;
@@ -123,6 +128,7 @@ nav.active .menu a {
     display: flex; /* viser menuen */
     justify-content: center; /* Sætter det i midten */
     margin-top: 20px; /* luft fra toppen */
+    gap: 24px;
   }
 
   .menu li a {
@@ -131,6 +137,11 @@ nav.active .menu a {
 
   .burger {
     display: none; /* skjuler burgermenuen*/
+  }
+
+  header {
+    justify-content: space-between;
+    display: block;
   }
 }
 

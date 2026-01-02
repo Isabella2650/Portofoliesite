@@ -1,0 +1,39 @@
+.div_portofolie {
+  background-color: #ffe9f5;
+  text-align: center;
+}
+
+.div_p {
+  max-width: 60ch; /* Sørger for der er 60 tegn pr linje = UX design */
+  padding-left: 1%;
+  text-align: center;
+  padding: 10px;
+}
+
+.img_computer {
+  width: 20%;
+  padding: 10%;
+}
+
+.div_computer {
+  padding-left: 39%;
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --gap: 24px;
+    --pad: 32px;
+  }
+  .div_p {
+    padding-left: 34%;
+  }
+
+  .img_computer {
+    width: 10%;
+    padding: 5%;
+  }
+
+  .div_computer {
+    padding-left: 45%;
+  }
+}
