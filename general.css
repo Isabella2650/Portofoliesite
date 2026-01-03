@@ -2,16 +2,19 @@ body {
   background-color: #faf8f5;
 }
 
-.div_video_tekst h2 {
-  margin: 0; /* fjerner luft */
-  line-height: 1.1;
+body {
+  margin: 0; /* fjerner standart luft i body */
+  padding: 0; /* fjerner standart luft i body */
+  background-color: #faf8f5;
 }
 
-.div_video_tekst a {
-  display: block; /* så den lægger sig pænt under */
-  margin-top: 0; /* ingen ekstra luft */
-  line-height: 1.1;
+/* section {
+  border: 1px solid black;
 }
+
+div {
+  border: 1px solid black;
+} */
 
 h1 {
   font-size: 35px;
@@ -33,6 +36,15 @@ h2 {
 
 h3 {
   font-size: 28px;
+  color: #151311;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+  font-style: normal;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 20px;
   color: #151311;
   font-family: "Merriweather", serif;
   font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
@@ -73,7 +85,7 @@ a:hover {
   padding-left: 2rem; /* ændrer på luften i bredden */
   padding-right: 2rem; /* ændrer på luften i bredden */
   border-radius: 20px;
-  border: solid;
+  border: 1px solid #151311;
   text-decoration: none;
   display: inline-block;
 
@@ -115,6 +127,15 @@ a:hover {
 
   h3 {
     font-size: 38px;
+    color: #151311;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  h4 {
+    font-size: 30px;
     color: #151311;
     font-family: "Merriweather", serif;
     font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */

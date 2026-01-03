@@ -9,14 +9,6 @@ body {
   padding: 0; /* fjerner standart luft i body */
 }
 
-section {
-  border: 1px solid black;
-}
-
-div {
-  border: 1px solid black;
-}
-
 /*1 start */
 .img_multimediedesigner {
   width: 60%;
@@ -35,24 +27,31 @@ div {
 
 /*3 start */
 .div_erhvevserfaring {
-  padding-left: 30%; /* luft til venstre */
+  padding-left: 25%;
   padding-top: 50px; /* luft til toppen */
 }
 
-.knap {
+.knap_erhvevserfaring {
   margin-bottom: 2rem; /* generelt luft rundt om */
   display: inline-block; /* vigtigt hvis det er <a> */
+  background: #ffe9f5;
+  color: #151311;
+  padding: 10px; /* ændrer på luften i højden i knappen*/
+  width: 200px; /* ændrer bredden */
+  border-radius: 20px; /* streg rundt om knappen */
+  border: 1px solid; /* sort/solid streg rundt om knappen */
+  text-decoration: none; /* Fjerner link stregen */
 }
 /*3 slut */
 
 /*4 start */
 .section_semester {
   padding: 20px; /* generelt luft rundt om */
-  margin-top: 5rem; /* luft til toppen */
 }
 
 .div_semester_tekst {
   max-width: 60ch; /* Sørger for der er 60 tegn pr linje = UX design */
+  padding: 20px; /* generelt luft rundt om */
 }
 .img_semester {
   width: 100%;
@@ -95,24 +94,19 @@ div {
     padding: 50px; /* generelt luft rundt om */
   }
 
-  .knap {
-    margin-top: 4rem; /* luft til toppen */
-    display: inline-block; /* vigtigt hvis det er <a> */
-  }
-
   .div_erhvevserfaring {
-    padding-left: 45%; /* luft til venstre */
-    padding-top: 70px; /* luft til toppen */
+    justify-content: center;
+    display: flex;
+    padding: 5%;
   }
   .section_semester {
     grid-template-columns: 1fr 1fr;
-    padding: 50px; /* generelt luft rundt om */
-    margin-top: 10rem; /* luft til toppen */
   }
 
   .img_semester {
     width: 50%;
     padding-left: 25%;
+    padding-right: 25%;
   }
 
   .section_ommig {

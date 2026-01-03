@@ -1,3 +1,8 @@
+.div_knapper {
+  display: grid;
+  max-width: 100vw;
+}
+
 .div_portofolie {
   background-color: #ffe9f5;
   text-align: center;
@@ -5,7 +10,6 @@
 
 .div_p {
   max-width: 60ch; /* Sørger for der er 60 tegn pr linje = UX design */
-  padding-left: 1%;
   text-align: center;
   padding: 10px;
 }
@@ -19,6 +23,24 @@
   padding-left: 39%;
 }
 
+.knap_portofolie {
+  background: #ffe9f5;
+  color: #151311;
+  padding: 10px; /* ændrer på luften i højden i knappen*/
+  width: 200px; /* ændrer bredden */
+  text-align: center; /* centrer tekst */
+  border-radius: 20px; /* streg rundt om knappen */
+  border: 1px solid; /* sort/solid streg rundt om knappen */
+  text-decoration: none; /* Fjerner link stregen */
+  display: inline-block;
+  margin: 10px; /* ændrer på luften i højden udenfor knappen*/
+}
+
+.div_knapper {
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
 @media screen and (min-width: 800px) {
   :root {
     --gap: 24px;
@@ -26,6 +48,7 @@
   }
   .div_p {
     padding-left: 34%;
+    padding-right: 34%;
   }
 
   .img_computer {
@@ -35,5 +58,11 @@
 
   .div_computer {
     padding-left: 45%;
+  }
+
+  .div_knapper {
+    grid-template-columns: 1fr 2fr;
+    padding-left: 34%;
+    padding-right: 34%;
   }
 }

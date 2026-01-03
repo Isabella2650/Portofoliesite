@@ -14,13 +14,14 @@ header {
   justify-content: center; /* logo i midten */
   padding: 20px;
   background-color: #faf8f5;
-  border-bottom: 3px solid #151311;
+  border-bottom: 1px solid #151311;
 }
 
 .div_logo {
   display: flex;
   justify-content: center; /* centrer vandret */
   text-decoration: none; /* fjerner link streg */
+  border: 1px solid #151311;
 }
 
 .div_logo a {
