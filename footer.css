@@ -1,0 +1,82 @@
+footer {
+  border-top: 1px solid;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  margin-top: 50px;
+  align-items: center; /* centrere vandret */
+}
+
+.img_logo {
+  max-width: 60px;
+  padding: 20px;
+  grid-column: 1;
+}
+
+.div_kontakt {
+  grid-row: 1;
+  grid-column: 2;
+  flex-direction: row; /* tekst skal ligge vandret ved siden af billede */
+  display: flex;
+  padding-top: 10px;
+  white-space: nowrap; /* FORHINDRER linjeskift */
+  align-items: center;
+  justify-content: center; /* centrere vandret */
+}
+
+.div_telefon {
+  grid-row: 1;
+  grid-column: 2;
+  flex-direction: row; /* tekst skal ligge vandret ved siden af billede */
+  display: flex;
+  padding-top: 10px;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center; /* centrere vandret */
+}
+
+.div_form {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  grid-column: 3;
+}
+
+.img_kontakt {
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+}
+.img_telefon {
+  width: 12px;
+  height: 25px;
+  padding: 8px;
+}
+
+.knap_form {
+  text-decoration: underline;
+  padding-left: 30%; /* *Placerer den 30% var venstre */
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --gap: 24px;
+    --pad: 32px;
+  }
+  .section_footer {
+    margin-top: 100px;
+  }
+  .img_logo {
+    min-width: 180px;
+    padding: 70px;
+  }
+  .img_kontakt {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+  }
+  .img_telefon {
+    width: 22px;
+    height: 35px;
+    padding: 8px;
+  }
+}

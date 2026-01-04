@@ -1,0 +1,96 @@
+/* CSS Starter er tilføjet */
+/* Generelle styles */
+.div_kontakt_form {
+  background-color: #ffe9f5;
+  text-align: center;
+}
+
+input {
+  border: 1px solid #151311;
+  padding: 5px;
+  background-color: #faf8f5;
+  width: 400px;
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  color: #151311;
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
+  font-weight: weight;
+  font-style: normal;
+  text-decoration: none;
+}
+
+textarea {
+  border: 1px solid #151311;
+  padding: 5px;
+  background-color: #faf8f5;
+  width: 400px;
+  padding-bottom: 200px;
+  font-family: "Mona Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+}
+
+button {
+  background: #ffe9f5;
+  color: #151311;
+  padding: 10px; /* ændrer på luften i højden */
+  padding-left: 2rem; /* ændrer på luften i bredden */
+  padding-right: 2rem; /* ændrer på luften i bredden */
+  border-radius: 20px;
+  border: 1px solid #151311;
+  font-family: "Mona Sans", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.error-message {
+  color: darkred;
+}
+
+/* Form layout */
+form {
+  display: grid;
+  padding: 10px;
+  justify-content: center;
+
+  .form-group {
+    display: grid;
+    padding: 10px;
+  }
+
+  label:has(input) {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+  }
+}
+
+/* Skjul fejlmeddelelsen som standard */
+.error-message {
+  display: none;
+}
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+/* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
+.form-group:has(:user-invalid) {
+  input {
+    outline: 3px solid rgba(170, 17, 17, 0.333);
+    border-color: rgb(152, 1, 1);
+  }
+  /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
+  .error-message {
+    display: block;
+  }
+}

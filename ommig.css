@@ -23,6 +23,13 @@ body {
   padding: 20px; /* generelt luft rundt om */
   max-width: 60ch; /* Sørger for der er 60 tegn pr linje = UX design */
 }
+
+.div_video {
+  padding: 20px; /* generelt luft rundt om */
+  display: flex;
+  justify-content: center; /* vandret centrering */
+  max-height: 60%;
+}
 /*2 slut */
 
 /*3 start */
@@ -56,6 +63,8 @@ body {
 .img_semester {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center; /* vandret centrering */
 }
 
 /*4 slut */
@@ -92,13 +101,13 @@ body {
 
   .div_ommig_tekst {
     padding: 50px; /* generelt luft rundt om */
+    max-height: 50%;
   }
 
   .div_erhvevserfaring {
-    justify-content: center;
-    display: flex;
     padding: 5%;
   }
+
   .section_semester {
     grid-template-columns: 1fr 1fr;
   }
@@ -107,6 +116,7 @@ body {
     width: 50%;
     padding-left: 25%;
     padding-right: 25%;
+    margin-top: 50px;
   }
 
   .section_ommig {
@@ -119,6 +129,17 @@ body {
     top: 5%;
     padding: 0%;
     vertical-align: middle;
+  }
+
+  .div_semester_tekst {
+    padding: 50px; /* generelt luft rundt om */
+    max-height: 50%;
+    grid-row: 1; /* Ændre i layoutet, ved at sige at teksten faktisk skal ligge i række 1 */
+    grid-column: 2; /* Ændre i layoutet, ved at sige at teksten faktisk skal ligge i kolonne 2 */
+  }
+
+  .div_video {
+    margin-top: 60px;
   }
 }
 

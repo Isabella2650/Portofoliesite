@@ -42,6 +42,11 @@ h4 {
   padding-right: 18%;
 }
 
+.div_knapper_mobilesite {
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
 .knap_portofolie {
   background: #ffe9f5;
   color: #151311;
@@ -81,5 +86,14 @@ h4 {
   .div_knapper {
     padding-left: 14%;
     padding-right: 14%;
+  }
+
+  .div_knapper mobilesite {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  .div_knapper_mobilesite {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }

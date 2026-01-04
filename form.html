@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex" />
     <title>Portofolie</title>
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="portofolie.css" />
+    <link rel="stylesheet" href="form.css" />
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,32 +46,36 @@
       </nav>
     </header>
     <main>
-      <div class="div_portofolie"><h3>Portofolie</h3></div>
-      <div class="div_p">
-        <p>
-          Her finder du et udvalg af mine projekter fra 1. semester på
-          Multimediedesigneruddannelsen. Projekterne viser hvad jeg har arbejdet
-          med, og giver et indblik i min proces, løsning og læring i de
-          hovedopgaver, jeg har lavet på studiet.
-        </p>
-      </div>
-      <div class="div_computer">
-        <img
-          class="img_computer"
-          src="img/computer.webp"
-          alt="Billede af computer"
-        />
-      </div>
-      <section>
-        <div class="div_knapper">
-          <a href="mobilesite.html" class="knap_portofolie">Mobilesite</a>
-          <a href="emnesite.html" class="knap_portofolie">Emnesite</a>
-          <a href="emergencysite.html" class="knap_portofolie">Emergencysite</a>
-          <a href="virksomhedsite.html" class="knap_portofolie"
-            >Virksomhedssite</a
-          >
-        </div>
-      </section>
+      <div class="div_kontakt_form"><h3>Kontakt mig</h3></div>
+        <form>
+  <div class="form-group">
+    <label for="first_name">Fuldenavn</label>
+    <input type="text" id="first_name" name="first_name" aria-label="first-name-error" required />
+    <p class="error-message">Please enter a value</p>
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">Telefon nummer</label>
+    <input type="tel" id="telephone" name="telephone" aria-label="last-name-error" required />
+    <p class="error-message">Please enter a value</p>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" aria-lable="email-error" required />
+    <p class="error-message">Please enter a value</p>
+  </div>
+
+  <div class="form-group">
+  <label for="message">Besked</label>
+  <textarea name="message" id="message" aria-lable="text-error"> </textarea>
+  </div>
+   
+  <button>Send</button>
+  
+</form>
+
+      </form>
     </main>
     <footer>
       <div>
@@ -96,5 +100,6 @@
       </div>
     </footer>
     <script src="menu.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
