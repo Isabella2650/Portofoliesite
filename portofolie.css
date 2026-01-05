@@ -62,7 +62,7 @@
 
   .div_knapper {
     grid-template-columns: 1fr 2fr;
-    padding-left: 34%;
-    padding-right: 34%;
+    padding-left: 32%;
+    padding-right: 32%;
   }
 }

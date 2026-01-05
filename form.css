@@ -7,11 +7,10 @@
 
 input {
   border: 1px solid #151311;
-  padding: 5px;
+  padding: 5px; /* generelt luft */
   background-color: #faf8f5;
-  width: 400px;
+  width: 250px; /* Ændrer bredde størelse */
   font-family: "Mona Sans", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-size: 14px;
 }
@@ -20,20 +19,17 @@ label {
   font-size: 14px;
   color: #151311;
   font-family: "Mona Sans", sans-serif;
-  font-optical-sizing: auto; /* Browseren justerer automatisk bogstavernes udseende ud fra font-størrelsen, */
-  font-weight: weight;
   font-style: normal;
   text-decoration: none;
 }
 
 textarea {
   border: 1px solid #151311;
-  padding: 5px;
+  padding: 30px; /* generelt luft */
   background-color: #faf8f5;
-  width: 400px;
+  width: 200px; /* Ændrer bredde størelse */
   padding-bottom: 200px;
   font-family: "Mona Sans", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-size: 14px;
 }
@@ -60,37 +56,64 @@ form {
   display: grid;
   padding: 10px;
   justify-content: center;
+  margin-left: 5px;
 
   .form-group {
     display: grid;
-    padding: 10px;
+    padding: 10px; /* generelt luft */
   }
-
-  label:has(input) {
-    display: flex;
-    align-items: center;
-    justify-self: start;
-  }
+}
+label:has(input) {
+  display: flex;
+  align-items: center;
+  justify-self: start;
 }
 
 /* Skjul fejlmeddelelsen som standard */
 .error-message {
   display: none;
 }
-.form-group:has(:required) {
-  label::after {
-    content: " *";
-    color: red;
-  }
+/* Vis rød stjene, så brugeren ved at feltet SKAL udfyldes */
+.form-group:has(:required) label::after {
+  content: " *";
+  color: red;
 }
+
 /* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
 .form-group:has(:user-invalid) {
-  input {
+  .form-group:has(:user-invalid) input {
     outline: 3px solid rgba(170, 17, 17, 0.333);
     border-color: rgb(152, 1, 1);
+  }
+
+  /* vis fejlbesked ved ugyldigt input: */
+
+  .form-group:has(:user-invalid) .error-message {
+    display: block;
   }
   /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
   .error-message {
     display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --gap: 24px;
+    --pad: 32px;
+  }
+
+  input {
+    width: 400px; /* Ændrer bredde størelse */
+    padding: 5px; /* generelt luft */
+  }
+
+  textarea {
+    width: 400px; /* Ændrer bredde størelse */
+    padding: 5px; /* generelt luft */
+  }
+
+  form {
+    padding: 60px; /* generelt luft */
   }
 }

@@ -1,137 +1,163 @@
 <!DOCTYPE html>
-<html lang="dk">
-  <head>
+<html lang="da">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Portofolie</title>
-     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="opgave.css" />
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="general.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (2)/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (2)/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io (2)/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
     <header>
-      <div class="div_logo">
-        <a href="/index.html">
-          <h1 class="logo">Isabella Clara Larsen</h1>
-        </a>
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="ommig.html">Om mig</a></li>
-          <li><a href="portofolie.html">Portofolie</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
+        <div class="div_logo">
+            <a href="/index.html">
+                <h1 class="logo">Isabella Clara Larsen</h1>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a href="portofolie.html">Portofolie</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
     </header>
     <main>
-      <div class="div_overskrift"><h3>Emergencysite</h3></div><details>
-          <summary class="pil">
-            <h4>
-             Løsning
-            </h4>
-          </summary>
-          <section class="section_projekt">
-            <div class="div_tekst">
-            <p>
-           Emergencysite var en opgave udarbejdet af underviserne, som vi arbejdede videre på i undervisningen. Sitet var allerede opbygget, men manglede forskellige funktioner, som vi hver især skulle lave. Opgaven havde fokus på blandt andet popups, JavaScript-effekter på SVG’er og formularer. Formålet var at lære at arbejde videre i eksisterende kode, som man ofte vil opleve i en virksomhed. Som en del af opgaven valgte vi selv, hvilken type katastrofe sitet skulle handle om.
-            </p>
-            </div>
-      <div>
-         <img class="img_projekt" src="img/emergencysite1.webp" alt="Billede af projekt" />
-      </div>
+        <!-- Bullet liste med overskrift-->
+        <div class="div_overskrift">
+            <h3>Emergencysite</h3>
+        </div>
+
+        <!-- en details kan vises og skjules-->
+        <details>
+            <!-- Det/teksten man klikker på for at vise/gemme indholdet-->
+            <summary class="pil">
+                <h4>
+                    Løsning
+                </h4>
+            </summary>
+            <section class="section_projekt">
+                <div class="div_tekst">
+                    <p>
+                        Emergencysite var en opgave udarbejdet af underviserne, som vi arbejdede videre på i
+                        undervisningen. Sitet var allerede opbygget, men manglede forskellige funktioner, som vi hver
+                        især skulle lave. Opgaven havde fokus på blandt andet popups, JavaScript-effekter på SVG’er og
+                        formularer. Formålet var at lære at arbejde videre i eksisterende kode, som man ofte vil opleve
+                        i en virksomhed. Som en del af opgaven valgte vi selv, hvilken type katastrofe sitet skulle
+                        handle om.
+                    </p>
+                </div>
+
+                <div>
+                    <img class="img_projekt" src="img/emergencysite1.webp" alt="Billede af projekt" />
+                </div>
+            </section>
         </details>
+
         <hr class="devider" />
-         </section>
+
         <!--Proces-->
         <details>
-          <summary class="pil">
-            <h4><strong>Proces</strong></h4>
-          </summary>
-          <section class="section_projekt">
-            <div class="div_tekst">
-            <p>
-            Processen startede med en brainstorm, hvor jeg valgte temaet for katastrofe-sitet. Her besluttede jeg, at sitet skulle handle om vampyrer. Derefter arbejdede jeg videre i det eksisterende site og begyndte med at lave SVG’er. I SVG’en lavede jeg en vampyrfigur, hvor jeg med JavaScript tilføjede interaktive elementer. Ved klik på blandt andet månen, øjne og mund skiftede elementerne farve og størrelse, og der blev vist faktatekst. Derudover arbejdede jeg med darkmode, forms og popups, der fungerede som artikler på forside.
-            </div> 
-      <div>
-         <img class="img_projekt" src="img/emergencysite2.webp" alt="Billede af projekt" />
-      </div>
+            <summary class="pil">
+                <h4><strong>Proces</strong></h4>
+            </summary>
+            <section class="section_projekt">
+                <div class="div_tekst">
+                    <p>
+                        Processen startede med en brainstorm, hvor jeg valgte temaet for katastrofe-sitet. Her
+                        besluttede jeg, at sitet skulle handle om vampyrer. Derefter arbejdede jeg videre i det
+                        eksisterende site og begyndte med at lave SVG’er. I SVG’en lavede jeg en vampyrfigur, hvor jeg
+                        med JavaScript tilføjede interaktive elementer. Ved klik på blandt andet månen, øjne og mund
+                        skiftede elementerne farve og størrelse, og der blev vist faktatekst. Derudover arbejdede jeg
+                        med darkmode, forms og popups, der fungerede som artikler på forside.
+                </div>
+                <div>
+                    <img class="img_projekt" src="img/emergencysite2.webp" alt="Billede af projekt" />
+                </div>
+            </section>
         </details>
         <hr class="devider" />
-         </section>
+
         <!--Læring-->
         <details>
-          <summary class="pil">
-            <h4><strong>læring</strong></h4>
-          </summary>
-          <section class="section_projekt">
-            <div class="div_tekst">
-            <p>
-            Opgaven har lært mig at arbejde videre i eksisterende kode, som man ofte vil opleve i en virksomhed. Det var udfordrende at sætte sig ind i andres struktur, id og classes, men det har givet mig en bedre forståelse for at navigere i større projekter. Derudover har jeg fået erfaring med darkmode og JavaScript ligledes har jeg lært at lave popups, SVG’er og forms.
-            </p>
-            </div>
-      <div>
-         <img class="img_projekt" src="img/emergencysite3.webp" alt="Billede af projekt" />
-      </div>
-      </details>
-        <hr class="devider" />
-         </section>
-        <!--Besøg-->
-        <details>
-          <summary class="pil">
-            <h4><strong>Besøg</strong></h4>
-          </summary>
-          <section class="section_projekt">
-             <div class="div_knapper">
-          <a href="https://isabella2650.github.io/vampyr/" class="knap_portofolie">Emergencysite</a>
-          <a href="https://www.figma.com/design/oRzcbMNOa7pjQC66kQ1VmU/Untitled?t=QEHaj2T6TnMTx21F-1" class="knap_portofolie">Figma</a>
-          <a href="https://github.com/Isabella2650/vampyr.git" class="knap_portofolie">Repository
-          </a>
-        </div>
+            <summary class="pil">
+                <h4><strong>læring</strong></h4>
+            </summary>
+            <section class="section_projekt">
+                <div class="div_tekst">
+                    <p>
+                        Opgaven har lært mig at arbejde videre i eksisterende kode, som man ofte vil opleve i en
+                        virksomhed. Det var udfordrende at sætte sig ind i andres struktur, id og classes, men det har
+                        givet mig en bedre forståelse for at navigere i større projekter. Derudover har jeg fået
+                        erfaring med darkmode og JavaScript ligledes har jeg lært at lave popups, SVG’er og forms.
+                    </p>
+                </div>
+                <div>
+                    <img class="img_projekt" src="img/emergencysite3.webp" alt="Billede af projekt" />
+                </div>
+            </section>
         </details>
         <hr class="devider" />
-      </section></main>
-    <footer> <div>
-        <img class="img_logo" src="img/logo.svg" alt="Billde af brev" />
-      </div>
-      <section class="section_kontakt">
-        <div class="div_kontakt">
-          <img class="img_kontakt" src="img/kontakt.svg" alt="Bilede af brev" />
-          <p>i@inettet.dk</p>
+
+        <!--Besøg-->
+        <details>
+            <summary class="pil">
+                <h4><strong>Besøg</strong></h4>
+            </summary>
+            <section class="section_projekt">
+                <div class="div_knapper">
+                    <a href="https://isabella2650.github.io/vampyr/" class="knap_portofolie">Emergencysite</a>
+                    <a href="https://www.figma.com/design/oRzcbMNOa7pjQC66kQ1VmU/Untitled?t=QEHaj2T6TnMTx21F-1"
+                        class="knap_portofolie">Figma</a>
+                    <a href="https://github.com/Isabella2650/vampyr.git" class="knap_portofolie">Repository
+                    </a>
+                </div>
+            </section>
+        </details>
+        <hr class="devider" />
+    </main>
+    <footer>
+        <div>
+            <img class="img_logo" src="img/logo.svg" alt="Billde af brev" />
         </div>
-        <div class="div_telefon">
-          <img
-            class="img_telefon"
-            src="img/telefon.svg"
-            alt="Bilede af telefon"
-          />
-          <p>71 77 18 33</p>
+        <section class="section_kontakt">
+            <div class="div_kontakt">
+                <img class="img_kontakt" src="img/kontakt.svg" alt="Bilede af brev" />
+                <p>i@inettet.dk</p>
+            </div>
+            <div class="div_telefon">
+                <img class="img_telefon" src="img/telefon.svg" alt="Bilede af telefon" />
+                <p>71 77 18 33</p>
+            </div>
+        </section>
+        <div class="form">
+            <a href="form.html" class="knap_form">Kontakt mig nu</a>
         </div>
-      </section>
-      <div class="form">
-        <a href="form.html" class="knap_form">Kontakt mig nu</a>
-      </div></footer>
+    </footer>
     <script src="menu.js"></script>
-  </body>
+</body>
+
 </html>

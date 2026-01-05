@@ -54,7 +54,7 @@ footer {
 
 .knap_form {
   text-decoration: underline;
-  padding-left: 30%; /* *Placerer den 30% var venstre */
+  padding-left: 15%; /* *Placerer den 15% var venstre */
 }
 
 @media screen and (min-width: 800px) {
@@ -78,5 +78,9 @@ footer {
     width: 22px;
     height: 35px;
     padding: 8px;
+  }
+
+  .knap_form {
+    padding-left: 30%; /* *Placerer den 30% var venstre */
   }
 }
