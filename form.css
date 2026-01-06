@@ -80,21 +80,19 @@ label:has(input) {
 }
 
 /* Tilføj rød kant omkring input-feltet, hvis det er ugyldigt */
-.form-group:has(:user-invalid) {
-  .form-group:has(:user-invalid) input {
-    outline: 3px solid rgba(170, 17, 17, 0.333);
-    border-color: rgb(152, 1, 1);
-  }
+.form-group:has(:user-invalid) input {
+  outline: 3px solid rgba(170, 17, 17, 0.333);
+  border-color: rgb(152, 1, 1);
+}
 
-  /* vis fejlbesked ved ugyldigt input: */
+/* vis fejlbesked ved ugyldigt input: */
 
-  .form-group:has(:user-invalid) .error-message {
-    display: block;
-  }
-  /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
-  .error-message {
-    display: block;
-  }
+.form-group:has(:user-invalid) .error-message {
+  display: block;
+}
+/* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
+.error-message {
+  display: block;
 }
 
 @media screen and (min-width: 800px) {
