@@ -57,12 +57,12 @@ form {
   padding: 10px;
   justify-content: center;
   margin-left: 5px;
-
-  .form-group {
-    display: grid;
-    padding: 10px; /* generelt luft */
-  }
 }
+.form-group {
+  display: grid;
+  padding: 10px; /* generelt luft */
+}
+
 label:has(input) {
   display: flex;
   align-items: center;
