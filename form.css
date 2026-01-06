@@ -92,7 +92,7 @@ label:has(input) {
 }
 /* Vis fejlmeddelelsen, hvis feltet er ugyldigt */
 .error-message {
-  display: block;
+  display: none;
 }
 
 @media screen and (min-width: 800px) {

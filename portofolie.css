@@ -41,6 +41,17 @@
   padding-right: 18%;
 }
 
+.skjul {
+  position: absolute; /* Fjerner elementet fra det normale layout, men beholder det i dokumentstrukturen */
+  overflow: hidden; /* Skjuler alt indhold, så det ikke kan ses visuelt */
+  clip: rect(
+    0,
+    0,
+    0,
+    0
+  ); /* Klipper elementet helt væk visuelt, så det ikke fylder noget på skærmen */
+}
+
 @media screen and (min-width: 800px) {
   :root {
     --gap: 24px;
